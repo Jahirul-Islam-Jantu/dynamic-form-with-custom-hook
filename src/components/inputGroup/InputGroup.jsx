@@ -1,14 +1,25 @@
 import React from 'react';
 import InputForm from "../ui/inputForms/InputForm.jsx";
 import Label from "../ui/inputForms/Label.jsx";
+import ErrorMessage from "../ui/ErrorMessage.jsx";
 
 const InputGroup = ({
-label, onchange, type, onFocus, onBlur, onSubmit, placeholder, name, value
+                        label,
+                        name,
+                        value,
+                        type,
+                        placeholder,
+                        error,
+                        onChange,
+                        onFocus,
+                        onBlur,
+                        onSubmit
                     }) => {
     return (
         <div className="input-group">
             <Label htmlFor={name} >{label}</Label>
-            <InputForm onChange={onchange} onFocus={onFocus} type={type} name={name} onBlur={onBlur} onSubmit={onSubmit} placeholder={placeholder} value={value} />
+            <InputForm onChange={onChange} onFocus={onFocus} type={type} name={name} onBlur={onBlur} onSubmit={onSubmit} error={error} placeholder={placeholder} value={value} />
+            {error && <ErrorMessage>{error}</ErrorMessage>}
         </div>
     );
 };
