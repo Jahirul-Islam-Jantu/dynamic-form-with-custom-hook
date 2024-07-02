@@ -4,3 +4,54 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+.nav-link{
+    text-decoration: none;
+    color: #999;
+    background-color: transparent;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0.03, 0, 0.15);
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #999;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    font-size: 18px;
+}
+.dynamic-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.input-group{
+    border: 1px solid #999;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    box-shadow: 2px 1px 2px 1px rgba(0, 0.03, 0, 0.15);
+    border-radius: 0.5rem;
+}
+.input-group:hover{
+    border: 1px solid #9af85d;
+}
+
+.nav-link:hover{
+    background-color: transparent;
+    border: 1px solid #1d68f8;
+    color: #1d68f8;
+    transition: 0.5s;
+}
+.nav-link:focus{
+    background-color: transparent;
+    border: 1px solid #9af85d;
+    color: #9af85d;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 2rem;
+
+}

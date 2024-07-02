@@ -1,15 +1,17 @@
 import React from 'react';
-import {HashRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import DynamicForm from "./pages/DynamicForm.jsx";
 import "./assets/css/style.css"
 
 const App = () => {
     return (
-        <HashRouter>
+        <BrowserRouter>
             <Routes>
-                <Route path="/" component={<DynamicForm />} />
+                <Route path="/" element={<DynamicForm />} />
+                <Route path="/test" element={<DynamicForm />} />
             </Routes>
-        </HashRouter>
+        </BrowserRouter
+        >
     );
 };
 

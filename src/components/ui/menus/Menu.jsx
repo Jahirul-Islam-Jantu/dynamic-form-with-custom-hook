@@ -3,8 +3,9 @@ import {NavLink} from "react-router-dom";
 
 const Menu = () => {
     return (
-        <div>
-            <NavLink to="/" >Dynamic Form</NavLink>
+        <div className="menu">
+            <NavLink className="nav-link" to="/">Dynamic Form</NavLink>
+            <NavLink className="nav-link" to="/test">Dynamic Form</NavLink>
         </div>
     );
 };
